@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulang Tahun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>It Is Kevin's birthday ?</h1>
+        </header>
+        <main>
+            <div class="birthday-card">
+                <h1 class="x"></h1>
+            </div>
+        </main>
+        <footer>
+            <p>Jika Tulisan di atas "NO" artinya its not my birthday.</p>
+        </footer>
+    </div>
+  
+</body>
+</html>
+<script>
+    let date = new Date()
+    let h1 = document.querySelector("h1.x");
+    (date.getDate() === 9 && date.getMonth() === 8) ? msg = "YES" : msg = "NO";
+    h1.innerHTML = msg;
+
+</script>
+
